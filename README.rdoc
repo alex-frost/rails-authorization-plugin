@@ -1,3 +1,14 @@
+==== Alex's Fork ( alex-frost / rails-authorization-plugin ) 
+This gem is for older versions of Rails (2.3) .  g5search turned the origional 
+work into a gem for ruby 1.8.7 and this is updated that work for ruby 1.9.  To use
+
+  gem "authorization", github: "alex-frost/rails-authorization-plugin"
+
+For Rails 4 and Ruby 2 then {rufo fork}[https://github.com/rufo/rails-authorization-plugin] is the place to go, 
+in your Gemfile include:
+
+  gem "authorization", github: "rufo/rails-authorization-plugin" 
+
 = Authorization plugin
 
 This plugin provides a flexible way to add authorization to Rails.

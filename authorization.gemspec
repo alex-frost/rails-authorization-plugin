@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
      "lib/publishare/parser.rb",
      "tasks/authorization_tasks.rake"
   ]
-  s.homepage = %q{https://github.com/g5search/rails-authorization-plugin}
+  s.homepage = %q{https://github.com/alex-frost/rails-authorization-plugin}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
