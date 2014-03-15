@@ -6,16 +6,16 @@ module Authorization
 
     # Modify these constants in your environment.rb to tailor the plugin to
     # your authentication system
-    if not Object.constants.include? "LOGIN_REQUIRED_REDIRECTION"
+    if not Object.constants.any? { |const| const.to_s == "LOGIN_REQUIRED_REDIRECTION" }
       LOGIN_REQUIRED_REDIRECTION = {
         :controller => 'session',
         :action => 'new'
       }
     end
-    if not Object.constants.include? "PERMISSION_DENIED_REDIRECTION"
+    if not Object.constants.any? { |const| const.to_s == "PERMISSION_DENIED_REDIRECTION" }
       PERMISSION_DENIED_REDIRECTION = ''
     end
-    if not Object.constants.include? "STORE_LOCATION_METHOD"
+    if not Object.constants.any? { |const| const.to_s == "STORE_LOCATION_METHOD" }
       STORE_LOCATION_METHOD = :store_location
     end
 
